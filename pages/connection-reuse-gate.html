@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preview access — Harriet Wang</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body class="gate-body">
+  <main class="gate-card" id="gateCard">
+    <div class="gate-card__mark">
+      <img src="../img/clover-black.png" alt=""/>
+      <img src="../img/clover-blue.png" alt=""/>
+    </div>
+    <h1 class="gate-card__title">Not public yet</h1>
+    <p class="gate-card__body">This project is still being refined. Enter the passcode to preview it.</p>
+    <form class="gate-card__form" id="gateForm" autocomplete="off">
+      <input
+        type="password"
+        class="gate-card__input"
+        id="gateInput"
+        placeholder="Passcode"
+        aria-label="Passcode"
+        autofocus
+      />
+      <button type="submit" class="gate-card__submit">Enter</button>
+      <p class="gate-card__error" id="gateError" role="alert"></p>
+    </form>
+  </main>
+
+  <script>
+    (function () {
+      // Client-side only — a friction-reducer for a shared preview link,
+      // not real access control (visible to anyone who reads page source).
+      var PASSCODE = 'IDX';
+      var STORAGE_KEY = 'cr_unlocked';
+      var DESTINATION = 'connection-reuse.html';
+
+      var form = document.getElementById('gateForm');
+      var input = document.getElementById('gateInput');
+      var error = document.getElementById('gateError');
+      var card = document.getElementById('gateCard');
+
+      // Already unlocked this session? Skip straight through.
+      if (sessionStorage.getItem(STORAGE_KEY) === 'true') {
+        window.location.replace(DESTINATION);
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (input.value === PASSCODE) {
+          sessionStorage.setItem(STORAGE_KEY, 'true');
+          window.location.replace(DESTINATION);
+        } else {
+          error.textContent = 'That passcode isn\u2019t right — try again.';
+          input.value = '';
+          input.focus();
+          card.classList.remove('is-shaking');
+          void card.offsetWidth; // restart animation
+          card.classList.add('is-shaking');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

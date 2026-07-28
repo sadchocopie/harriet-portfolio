@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locale — AI Localization QA — Harriet Wang</title>
+  <meta name="description" content="Locale — an AI-powered Figma plugin that audits Canadian French content before it reaches dev."/>
+  <link rel="canonical" href="https://your-domain-here.com/pages/locale-hackathon.html"/>
+
+  <!-- Open Graph / social preview — update SITE in this comment's source (build script) once the real domain is live -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Harriet Wang"/>
+  <meta property="og:title" content="Locale — AI Localization QA — Harriet Wang"/>
+  <meta property="og:description" content="Locale — an AI-powered Figma plugin that audits Canadian French content before it reaches dev."/>
+  <meta property="og:url" content="https://your-domain-here.com/pages/locale-hackathon.html"/>
+  <meta property="og:image" content="https://your-domain-here.com/img/og-image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Locale — AI Localization QA — Harriet Wang"/>
+  <meta name="twitter:description" content="Locale — an AI-powered Figma plugin that audits Canadian French content before it reaches dev."/>
+  <meta name="twitter:image" content="https://your-domain-here.com/img/og-image.jpg"/>
+
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png"/>
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/projects-data.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body data-project-id="locale-hackathon">
+<div class="brand-strip">
+  <a href="../index.html" class="brand" aria-label="Harriet Wang — Home">
+    <img src="../img/clover-black.png" alt="" class="brand__clover"/>
+    <img src="../img/clover-blue.png" alt="" class="brand__clover"/>
+    <span class="brand__dash"></span>
+  </a>
+</div>
+
+<nav class="nav">
+  <div class="nav__pill">
+    <div class="nav__brandtext">
+      <a href="../index.html" class="nav__name">Harriet Wang</a>
+      <span class="nav__tagline">curious human</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="../index.html" class="nav__link"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>Home</a></li>
+      <li><a href="about.html" class="nav__link"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>About</a></li>
+      <li><a href="../files/Harriet-Wang-Resume.pdf" class="nav__link" target="_blank"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>Resume</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+<section class="project-hero"><div class="container">
+  <a href="../index.html" class="back-link">← All work</a>
+  <div class="tag-row"><span class="tag">For fun · Hackathon</span><span class="tag">3X AI · Figma Plugin · fr-CA</span></div>
+  <h1 class="project-title">Locale — AI<br>Localization QA</h1>
+  <p class="project-sub">A Figma plugin + Claude agent that audits Canadian French content in your design file — before dev, before handoff, before it's expensive to fix.</p>
+  <div class="stats-row fade-in">
+    <div class="stat-block"><span class="stat-block__num">2-part</span><span class="stat-block__label">Figma plugin + Claude agent</span></div>
+    <div class="stat-block"><span class="stat-block__num">fr-CA</span><span class="stat-block__label">Quebec French + Intuit brand voice</span></div>
+    <div class="stat-block"><span class="stat-block__num">In Figma</span><span class="stat-block__label">Layer annotations before handoff</span></div>
+  </div>
+  <div class="project-meta fade-in">
+    <div><span class="project-meta__label">My role</span><span class="project-meta__value">Designer + builder</span></div>
+    <div><span class="project-meta__label">With</span><span class="project-meta__value">Samantha Kirby, Content Systems</span></div>
+    <div><span class="project-meta__label">Stack</span><span class="project-meta__value">Figma plugin · DeepL · Claude + Figma MCP</span></div>
+    <div><span class="project-meta__label">GitHub</span><span class="project-meta__value">github.intuit.com/hwang20/Locale---3X-Hacathon</span></div>
+  </div>
+</div></section>
+<div class="project-body"><div class="container"><div class="project-body__layout">
+  <nav class="project-body__sidebar">
+    <a href="#idea" class="toc-link">The Idea</a>
+    <a href="#how" class="toc-link">How It Works</a>
+    <a href="#sowhat" class="toc-link">So What</a>
+  </nav>
+  <div>
+    <section id="idea" class="project-section">
+      <p class="project-section__label">01 · The Idea</p>
+      <h2 class="project-section__heading">Catch it in Figma, not in production</h2>
+      <p class="project-section__body">Localization QA always gets caught too late. By the time a Canadian French content issue surfaces in a shipped experience — wrong register, false friend, technically-translated-but-completely-off-brand — the fix is expensive. Dev is done. Strings are baked in. Everyone's already moved on.</p>
+      <p class="project-section__body">Sam Kirby and I built Locale to move that review into Figma, before handoff, while fixes are still cheap.</p>
+    </section>
+    <section id="how" class="project-section">
+      <p class="project-section__label">02 · How It Works</p>
+      <h2 class="project-section__heading">Plugin extracts. Agent reviews. Annotations land in your file.</h2>
+      <p class="project-section__body">A Figma plugin extracts all text from a selected frame, runs it through DeepL for translation, and writes a duplicate translated frame to canvas — original and translation side by side.</p>
+      <p class="project-section__body">A Claude agent then reads both frames via Figma MCP, QAs the translated content against Quebec French linguistic conventions and Intuit brand voice, and writes annotation notes directly onto flagged layers in the original frame. The audit lives in your file, before a developer has touched a single string.</p>
+    </section>
+    <section id="sowhat" class="project-section">
+      <p class="project-section__label">03 · So What</p>
+      <h2 class="project-section__heading">AI auditing against a real standard — not generating design</h2>
+      <p class="project-section__body">The AI here isn't generating design — it's reviewing it against a real standard. That's a more useful and underexplored use case than most "AI in design" conversations get to.</p>
+      <p class="project-section__body">The Figma MCP + agent pattern is portable to any content review: accessibility language, brand voice, tone. We built it for fr-CA because that was the real problem. The pattern is the thing worth keeping.</p>
+    </section>
+  </div>
+</div></div></div>
+<section class="more-work">
+  <div class="container">
+    <h2 class="section-label fade-in">More work</h2>
+    <div class="project-carousel">
+      <div class="project-carousel__track" id="projectTrack">
+        <!-- Populated at runtime by renderMoreWork() in main.js, from js/projects-data.js.
+             Shows every OTHER project automatically — nothing to edit in this file. -->
+      
+
+      </div>
+      <div class="project-carousel__controls">
+        <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Scroll left">←</button>
+        <div class="project-carousel__bar" id="carouselBar"><div class="project-carousel__thumb" id="carouselThumb"></div></div>
+        <button type="button" class="carousel-btn carousel-btn--next" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <canvas id="footer-canvas" class="footer__canvas" aria-hidden="true"></canvas>
+  <div class="container footer__content">
+    <p class="footer__label">See all work</p>
+    <h2 class="footer__headline" style="font-size:clamp(2.25rem,5vw,4.5rem);"><a href="../index.html" class="footer-next-link"><em>Back</em> to work →</a></h2>
+    <div class="footer__links"><a href="../index.html" class="footer__link">All projects ↗</a><a href="about.html" class="footer__link">About ↗</a></div>
+    <div class="footer__bottom"><span class="footer__sig">◐ Harriet Wang · 2025</span><span class="footer__closing">欢迎光临 · Have a nice day</span></div>
+  </div>
+</footer>
+</body></html>

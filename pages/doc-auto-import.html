@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document Auto Import — Harriet Wang</title>
+  <meta name="description" content="Case study: Document Auto Import, reducing double-login friction in a critical Intuit auth flow."/>
+  <link rel="canonical" href="https://your-domain-here.com/pages/doc-auto-import.html"/>
+
+  <!-- Open Graph / social preview — update SITE in this comment's source (build script) once the real domain is live -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Harriet Wang"/>
+  <meta property="og:title" content="Document Auto Import — Harriet Wang"/>
+  <meta property="og:description" content="Case study: Document Auto Import, reducing double-login friction in a critical Intuit auth flow."/>
+  <meta property="og:url" content="https://your-domain-here.com/pages/doc-auto-import.html"/>
+  <meta property="og:image" content="https://your-domain-here.com/img/og-image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Document Auto Import — Harriet Wang"/>
+  <meta name="twitter:description" content="Case study: Document Auto Import, reducing double-login friction in a critical Intuit auth flow."/>
+  <meta name="twitter:image" content="https://your-domain-here.com/img/og-image.jpg"/>
+
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png"/>
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/projects-data.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body data-project-id="doc-auto-import">
+<div class="brand-strip">
+  <a href="../index.html" class="brand" aria-label="Harriet Wang — Home">
+    <img src="../img/clover-black.png" alt="" class="brand__clover"/>
+    <img src="../img/clover-blue.png" alt="" class="brand__clover"/>
+    <span class="brand__dash"></span>
+  </a>
+</div>
+
+<nav class="nav">
+  <div class="nav__pill">
+    <div class="nav__brandtext">
+      <a href="../index.html" class="nav__name">Harriet Wang</a>
+      <span class="nav__tagline">curious human</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="../index.html" class="nav__link"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>Home</a></li>
+      <li><a href="about.html" class="nav__link"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>About</a></li>
+      <li><a href="../files/Harriet-Wang-Resume.pdf" class="nav__link" target="_blank"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<section class="project-hero">
+  <div class="container">
+    <a href="../index.html" class="back-link">← All work</a>
+    <div class="tag-row"><span class="tag tag--green">Shipped · 2025</span><span class="tag">Intuit · TurboTax · QBO</span></div>
+    <h1 class="project-title">Document<br>Auto Import</h1>
+    <p class="project-sub">Reducing "double-login" friction at a critical auth experience — shifting user mental models from "why am I logging in again?" to "I'm granting access to my documents."</p>
+    <div class="stats-row fade-in">
+      <div class="stat-block"><span class="stat-block__num">75%</span><span class="stat-block__label">dropped off at the sign-in prompt — the problem</span></div>
+      <div class="stat-block"><span class="stat-block__num">~100%</span><span class="stat-block__label">user preference for new design in testing</span></div>
+      <div class="stat-block"><span class="stat-block__num">6 wk</span><span class="stat-block__label">discovery to design delivery</span></div>
+    </div>
+    <div class="project-meta fade-in">
+      <div><span class="project-meta__label">My role</span><span class="project-meta__value">Product Designer (IDX XD)</span></div>
+      <div><span class="project-meta__label">Team</span><span class="project-meta__value">PM · Content Designer · Design (me)</span></div>
+      <div><span class="project-meta__label">Stakeholders</span><span class="project-meta__value">QuickBooks · TurboTax · Engineering</span></div>
+      <div><span class="project-meta__label">Tools</span><span class="project-meta__value">Figma · Amplitude · UserTesting · HeyMarvin</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="project-body">
+  <div class="container">
+    <div class="project-body__layout">
+      <nav class="project-body__sidebar">
+        <a href="#challenge" class="toc-link">Challenge</a>
+        <a href="#tasks" class="toc-link">My Tasks</a>
+        <a href="#process" class="toc-link">Design Process</a>
+        <a href="#impact" class="toc-link">Impact</a>
+      </nav>
+      <div>
+        <section id="challenge" class="project-section">
+          <p class="project-section__label">01 · Challenge</p>
+          <h2 class="project-section__heading">The "double-login" that was costing completions</h2>
+          <p class="project-section__body">Banks use separate secure channels to transmit different data types. A user can authenticate once to sync transactions, but a second explicit authorization is required for PDF documents — like monthly statements and tax forms. Most customers didn't know auto-import was even possible, and when asked to log in twice in a row, they abandoned and reverted to manual upload.</p>
+          <div class="project-img">
+            <img src="../img/projects/doc-auto-import/hero-multi-channel.png" alt="Multi channel experience" loading="lazy"/>
+          </div>
+          <div class="project-img">
+            <img src="../img/projects/doc-auto-import/qb-problem.png" alt="QuickBooks problem state" loading="lazy"/>
+          </div>
+          <p class="img-caption">The problem: 75% of customers dropped off immediately after seeing the second sign-in prompt</p>
+        </section>
+
+        <section id="tasks" class="project-section">
+          <p class="project-section__label">02 · My Tasks</p>
+          <h2 class="project-section__heading">End-to-end design strategy + proactive cross-BU bridge building</h2>
+          <p class="project-section__body">I led end-to-end design strategy: identifying experience gaps across QBO and TurboTax, defining problem statements in the PRD, and delivering design audits, high-fidelity prototypes, and research-backed decks for PM to get senior leadership sign-off on dev resources.</p>
+          <p class="project-section__body">The original scope was narrow — one product, one team. I proactively connected with TurboTax designers and PMs to understand their expert-led workflow, co-facilitated roundtables with TurboTax experts, and helped architect a solution built for cross-BU scalability from day one.</p>
+          <div class="project-img">
+            <img src="../img/projects/doc-auto-import/tt-problem.png" alt="TurboTax problem discovery" loading="lazy"/>
+          </div>
+          <p class="img-caption">TurboTax Full Service — experts waiting on manual uploads from customers who could have automated it</p>
+        </section>
+
+        <section id="process" class="project-section">
+          <p class="project-section__label">03 · Design Process</p>
+          <h2 class="project-section__heading">Three rounds of testing to find the right frame</h2>
+          <p class="project-section__body">User walkthroughs revealed something more nuanced than expected: most customers actually considered a second sign-in a security necessity. The real drop-off was about value — customers didn't understand how auto-import would improve their workflow, so they didn't see why the second step was worth it.</p>
+          <p class="project-section__body">I ran three rounds of usability testing with my Content Design partner, iterating from an imagery-heavy approach (high resonance, low scalability) through to a stripped-down conversational design that proved most successful in A/B tests — and was a much lighter engineering lift to scale across Banking, Tax, and Loans.</p>
+          <div class="project-img-grid">
+            <div class="project-img"><img src="../img/projects/doc-auto-import/education-a.png" alt="Design iteration A" loading="lazy"/></div>
+            <div class="project-img"><img src="../img/projects/doc-auto-import/education-b.png" alt="Design iteration B" loading="lazy"/></div>
+          </div>
+          <p class="img-caption">Early iterations — strong resonance, but too complex to scale</p>
+          <div class="project-img">
+            <img src="../img/projects/doc-auto-import/education-c.png" alt="Final design direction" loading="lazy"/>
+          </div>
+          <p class="img-caption">Final direction — conversational, scalable, tested highest in A/B</p>
+        </section>
+
+        <section id="impact" class="project-section">
+          <p class="project-section__label">04 · Impact</p>
+          <h2 class="project-section__heading">Mental model shifted. Projected significant lift in auto-import adoption.</h2>
+          <p class="project-section__body">The final design successfully shifted user perception from "Why am I logging in again?" to "I'm granting access to my secure documents." User testing showed nearly 100% preference for the new design.</p>
+          <p class="project-section__body">The solution was architected for scalability from day one — serving different content across Banking, Tax, and Loans with a content-driven approach rather than custom graphics per scenario. Projected to drive significant lift in automated document imports across QuickBooks and TurboTax.</p>
+          <div class="project-img">
+            <img src="../img/projects/doc-auto-import/multi-channel-alt.png" alt="Final multi-channel solution" loading="lazy"/>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="more-work">
+  <div class="container">
+    <h2 class="section-label fade-in">More work</h2>
+    <div class="project-carousel">
+      <div class="project-carousel__track" id="projectTrack">
+        <!-- Populated at runtime by renderMoreWork() in main.js, from js/projects-data.js.
+             Shows every OTHER project automatically — nothing to edit in this file. -->
+      
+
+      </div>
+      <div class="project-carousel__controls">
+        <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Scroll left">←</button>
+        <div class="project-carousel__bar" id="carouselBar"><div class="project-carousel__thumb" id="carouselThumb"></div></div>
+        <button type="button" class="carousel-btn carousel-btn--next" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <canvas id="footer-canvas" class="footer__canvas" aria-hidden="true"></canvas>
+  <div class="container footer__content">
+    <p class="footer__label">Next project</p>
+    <h2 class="footer__headline" style="font-size:clamp(2.25rem,5vw,4.5rem);"><a href="route-year-in-review.html" class="footer-next-link">Route Year in <em>Review →</em></a></h2>
+    <div class="footer__links"><a href="route-year-in-review.html" class="footer__link">View project ↗</a><a href="../index.html" class="footer__link">All work ↗</a></div>
+    <div class="footer__bottom"><span class="footer__sig">◐ Harriet Wang · 2025</span><span class="footer__closing">欢迎光临 · Have a nice day</span></div>
+  </div>
+</footer>
+</body>
+</html>

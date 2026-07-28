@@ -1,0 +1,5 @@
+# Update the Sitemap URL below once the real domain is live.
+User-agent: *
+Allow: /
+
+Sitemap: https://your-domain-here.com/sitemap.xml

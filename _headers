@@ -1,0 +1,13 @@
+# Netlify Basic Auth — page-specific access control.
+# Add blocks below to protect a page/folder with the browser's native
+# username+password prompt. Delete a block (or the whole file) to make
+# that path public again — no redeploy config changes needed beyond
+# pushing the updated file.
+#
+# Example:
+# /pages/some-page.html
+#   Basic-Auth: username:password
+#
+# (Connection Reuse is currently gated a different way — see
+# pages/connection-reuse-gate.html — a custom on-brand passcode page,
+# not Basic Auth. No rule needed here for it.)

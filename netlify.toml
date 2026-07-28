@@ -1,0 +1,64 @@
+# Netlify config for a plain static site — no build step needed.
+# Netlify will just publish the repo root as-is.
+
+[build]
+  publish = "."
+  # No build command — there's no compile/bundle step for this site.
+  # If you ever add one (e.g. migrating to an SSG), set it here, e.g.:
+  # command = "npm run build"
+  # publish = "dist"
+
+# ---------------------------------------------------------------------------
+# Security headers — sensible defaults for a static portfolio site.
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# ---------------------------------------------------------------------------
+# Caching — long cache for versioned/static assets, short cache for HTML so
+# edits show up quickly without needing a manual cache purge.
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ---------------------------------------------------------------------------
+# Pretty URLs (optional) — lets /pages/about instead of /pages/about.html work.
+# Comment out if you'd rather keep explicit .html links everywhere (simpler,
+# matches what's already in the HTML's internal links today).
+# ---------------------------------------------------------------------------
+# [[redirects]]
+#   from = "/about"
+#   to = "/pages/about.html"
+#   status = 200
+
+# ---------------------------------------------------------------------------
+# Custom 404 page — Netlify will serve pages/404.html automatically if it
+# exists at that path. Not included yet; add one if you want a branded
+# not-found page instead of Netlify's default.
+# ---------------------------------------------------------------------------
+# [[redirects]]
+#   from = "/*"
+#   to = "/404.html"
+#   status = 404

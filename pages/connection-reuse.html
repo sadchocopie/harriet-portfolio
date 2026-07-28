@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Preview gate guard: not real security, just keeps this project from
+       being casually browsed to before it's ready. See connection-reuse-gate.html.
+       Runs synchronously, before anything renders, to avoid a content flash. -->
+  <script>
+    if (sessionStorage.getItem('cr_unlocked') !== 'true') {
+      window.location.replace('connection-reuse-gate.html');
+    }
+  </script>
+  <title>IDX Connection Reuse — Harriet Wang</title>
+  <meta name="description" content="Case study: IDX Connection Reuse — one connection, two products, zero re-authentication."/>
+  <link rel="canonical" href="https://your-domain-here.com/pages/connection-reuse.html"/>
+
+  <!-- Open Graph / social preview — update SITE in this comment's source (build script) once the real domain is live -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Harriet Wang"/>
+  <meta property="og:title" content="IDX Connection Reuse — Harriet Wang"/>
+  <meta property="og:description" content="Case study: IDX Connection Reuse — one connection, two products, zero re-authentication."/>
+  <meta property="og:url" content="https://your-domain-here.com/pages/connection-reuse.html"/>
+  <meta property="og:image" content="https://your-domain-here.com/img/og-image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="IDX Connection Reuse — Harriet Wang"/>
+  <meta name="twitter:description" content="Case study: IDX Connection Reuse — one connection, two products, zero re-authentication."/>
+  <meta name="twitter:image" content="https://your-domain-here.com/img/og-image.jpg"/>
+
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png"/>
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/projects-data.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body data-project-id="connection-reuse">
+<div class="brand-strip">
+  <a href="../index.html" class="brand" aria-label="Harriet Wang — Home">
+    <img src="../img/clover-black.png" alt="" class="brand__clover"/>
+    <img src="../img/clover-blue.png" alt="" class="brand__clover"/>
+    <span class="brand__dash"></span>
+  </a>
+</div>
+
+<nav class="nav">
+  <div class="nav__pill">
+    <div class="nav__brandtext">
+      <a href="../index.html" class="nav__name">Harriet Wang</a>
+      <span class="nav__tagline">curious human</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="../index.html" class="nav__link"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>Home</a></li>
+      <li><a href="about.html" class="nav__link"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>About</a></li>
+      <li><a href="../files/Harriet-Wang-Resume.pdf" class="nav__link" target="_blank"><span class="nav__heart"><img class="h-orange" src="../img/heart-orange.png" alt=""/><img class="h-blue" src="../img/heart-blue.png" alt=""/></span>Resume</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+<section class="project-hero"><div class="container">
+  <a href="../index.html" class="back-link">← All work</a>
+  <div class="tag-row"><span class="tag tag--green">Shipped · Feb 2025</span><span class="tag">IDX · Credit Karma · TurboTax</span></div>
+  <h1 class="project-title">IDX Connection<br>Reuse</h1>
+  <p class="project-sub">One connection. Two products. Zero re-authentication. The cross-product bank connection reuse experience for CK members entering TurboTax.</p>
+  <div class="stats-row fade-in">
+    <div class="stat-block"><span class="stat-block__num">0</span><span class="stat-block__label">re-authentications required for eligible CK members</span></div>
+    <div class="stat-block"><span class="stat-block__num">3</span><span class="stat-block__label">products: CK · TurboTax · QBO</span></div>
+    <div class="stat-block"><span class="stat-block__num">Standard</span><span class="stat-block__label">IDX reuse UI — adopted across multiple integrations</span></div>
+  </div>
+  <div class="project-meta fade-in">
+    <div><span class="project-meta__label">My role</span><span class="project-meta__value">Product Designer (IDX XD)</span></div>
+    <div><span class="project-meta__label">Team</span><span class="project-meta__value">IDX XD · DataX XD · PM · Eng · Identity</span></div>
+    <div><span class="project-meta__label">Patterns shipped</span><span class="project-meta__value">Carousel reuse · Bulk multi-select · Back-to-back auth</span></div>
+    <div><span class="project-meta__label">Status</span><span class="project-meta__value">Shipped February 2025</span></div>
+  </div>
+</div></section>
+<div class="project-body"><div class="container"><div class="project-body__layout">
+  <nav class="project-body__sidebar">
+    <a href="#challenge" class="toc-link">Challenge</a>
+    <a href="#tasks" class="toc-link">My Tasks</a>
+    <a href="#impact" class="toc-link">Impact</a>
+  </nav>
+  <div>
+    <section id="challenge" class="project-section">
+      <p class="project-section__label">01 · Challenge</p>
+      <h2 class="project-section__heading">If we already have your credentials, why are we asking again?</h2>
+      <p class="project-section__body">If you've already connected your brokerage to Credit Karma, Intuit has your credentials. So why does TurboTax ask you to set up the same connection from scratch at tax time? That friction was real — and it was costing TurboTax completions.</p>
+      <p class="project-section__body">Connection Reuse is IDX's answer: let CK members carry existing financial connections into TurboTax with a single consent. Cross-product, touching CK, TT, and Identity — each with different patterns, consent requirements, and technical constraints. Customers shouldn't feel any of that.</p>
+    </section>
+    <section id="tasks" class="project-section">
+      <p class="project-section__label">02 · My Tasks</p>
+      <h2 class="project-section__heading">Carousel reuse, bulk multi-select, back-to-back auth</h2>
+      <p class="project-section__body">I owned the IDX widget design end-to-end — the carousel reuse pattern for single-provider selection and the bulk multi-select pattern for customers with multiple eligible accounts. I built prototypes for both QBO and TurboTax contexts, iterated through multiple rounds of cross-functional feedback, and designed the back-to-back auth flow for providers requiring re-authentication on reuse.</p>
+      <p class="project-section__body">I worked alongside DataX XD and PM on consent patterns and error states, and turned around spec updates quickly when integration requirements shifted mid-flight.</p>
+    </section>
+    <section id="impact" class="project-section">
+      <p class="project-section__label">03 · Impact</p>
+      <h2 class="project-section__heading">Standard IDX reuse UI, adopted beyond the original launch</h2>
+      <p class="project-section__body">Launched February 2025 across CK, TT, IDX, DataX, and Identity. Eligible CK members can carry their financial connections into TurboTax with bulk import — removing one of the most friction-heavy moments in TT onboarding.</p>
+      <p class="project-section__body">The carousel reuse and bulk multi-select patterns I designed are now the standard IDX reuse UI, adopted across multiple integrations beyond the original CK×TT launch.</p>
+    </section>
+  </div>
+</div></div></div>
+<section class="more-work">
+  <div class="container">
+    <h2 class="section-label fade-in">More work</h2>
+    <div class="project-carousel">
+      <div class="project-carousel__track" id="projectTrack">
+        <!-- Populated at runtime by renderMoreWork() in main.js, from js/projects-data.js.
+             Shows every OTHER project automatically — nothing to edit in this file. -->
+      
+
+      </div>
+      <div class="project-carousel__controls">
+        <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Scroll left">←</button>
+        <div class="project-carousel__bar" id="carouselBar"><div class="project-carousel__thumb" id="carouselThumb"></div></div>
+        <button type="button" class="carousel-btn carousel-btn--next" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <canvas id="footer-canvas" class="footer__canvas" aria-hidden="true"></canvas>
+  <div class="container footer__content">
+    <p class="footer__label">Next project</p>
+    <h2 class="footer__headline" style="font-size:clamp(2.25rem,5vw,4.5rem);"><a href="smart-account-linking.html" class="footer-next-link">Smart Account <em>Linking →</em></a></h2>
+    <div class="footer__links"><a href="smart-account-linking.html" class="footer__link">View project ↗</a><a href="../index.html" class="footer__link">All work ↗</a></div>
+    <div class="footer__bottom"><span class="footer__sig">◐ Harriet Wang · 2025</span><span class="footer__closing">欢迎光临 · Have a nice day</span></div>
+  </div>
+</footer>
+</body></html>
