@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Update every URL below (your-domain-here.com -> real domain) once the site is live.
-     lastmod dates are a reasonable starting point — update when you actually edit a page. -->
+<!-- Domain is live: harrietwang.com. lastmod dates are a reasonable starting point — update when you actually edit a page. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-domain-here.com/</loc>
+    <loc>https://harrietwang.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://your-domain-here.com/pages/about.html</loc>
+    <loc>https://harrietwang.com/pages/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://your-domain-here.com/pages/app-integration.html</loc>
+    <loc>https://harrietwang.com/pages/app-integration.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://your-domain-here.com/pages/route-year-in-review.html</loc>
+    <loc>https://harrietwang.com/pages/route-year-in-review.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://your-domain-here.com/pages/design-at-route.html</loc>
+    <loc>https://harrietwang.com/pages/design-at-route.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://your-domain-here.com/pages/doc-auto-import.html</loc>
+    <loc>https://harrietwang.com/pages/doc-auto-import.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

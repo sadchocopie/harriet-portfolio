@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain-here.com/sitemap.xml
+Sitemap: https://harrietwang.com/sitemap.xml
