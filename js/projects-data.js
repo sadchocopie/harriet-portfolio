@@ -30,6 +30,12 @@
  *   desc     (required) one-sentence summary shown on the homepage card
  *   stats    (optional) array of { num, label } — up to 2 reads best
  *   cta      (required) { label, variant } — variant is 'primary' or 'wip'
+ *   archived (optional) true = the page still exists and is fully reachable by
+ *            direct link (and still gets a "More work" entry removed correctly
+ *            everywhere), but it's excluded from the homepage grid AND from
+ *            every other project's "More work" carousel. Use this for pages
+ *            you're not ready to publicize yet but don't want to delete.
+ *            Flip it back to false/remove it whenever you want it visible again.
  */
 
 const PROJECTS = [
@@ -82,6 +88,28 @@ const PROJECTS = [
   },
 
   {
+    id: 'design-at-route',
+    href: 'design-at-route.html',
+    cursor: 'More Route work →',
+    thumb: {
+      type: 'image',
+      src: 'img/projects/design-at-route/cover.jpg',
+      alt: 'Product Design at Route',
+    },
+    tags: [
+      { text: 'Route · 2021–2023' },
+      { text: 'Onboarding · Checkout · Design Systems' },
+    ],
+    title: 'Product Design at Route',
+    desc: 'More than a package-tracking app — onboarding, checkout, payments, and a NYC Times Square billboard along the way.',
+    stats: [
+      { num: '5', label: 'person design team' },
+      { num: '200k+', label: 'engagement on shipped features' },
+    ],
+    cta: { label: 'Case Study ↗', variant: 'primary' },
+  },
+
+  {
     id: 'doc-auto-import',
     href: 'doc-auto-import.html',
     cursor: '4 min read →',
@@ -105,6 +133,7 @@ const PROJECTS = [
   {
     id: 'connection-reuse',
     href: 'connection-reuse.html',
+    archived: true,
     cursor: '3 min read →',
     thumb: { type: 'placeholder', text: 'IDX · Connection Reuse', color: 'var(--accent)' },
     tags: [
@@ -122,6 +151,7 @@ const PROJECTS = [
   {
     id: 'smart-account-linking',
     href: 'smart-account-linking.html',
+    archived: true,
     cursor: 'Research-heavy →',
     thumb: { type: 'placeholder', text: 'IDX · Smart Account Linking', color: 'var(--mid)' },
     tags: [
@@ -139,6 +169,7 @@ const PROJECTS = [
   {
     id: 'locale-hackathon',
     href: 'locale-hackathon.html',
+    archived: true,
     cursor: 'Made this for fun ✦',
     thumb: { type: 'placeholder', text: 'FIGMA PLUGIN + CLAUDE AGENT', mono: true, dashed: true },
     tags: [

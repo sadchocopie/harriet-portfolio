@@ -23,23 +23,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://your-domain-here.com/pages/doc-auto-import.html</loc>
+    <loc>https://your-domain-here.com/pages/design-at-route.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://your-domain-here.com/pages/connection-reuse.html</loc>
+    <loc>https://your-domain-here.com/pages/doc-auto-import.html</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://your-domain-here.com/pages/smart-account-linking.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://your-domain-here.com/pages/locale-hackathon.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>

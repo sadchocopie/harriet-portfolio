@@ -64,8 +64,12 @@
       </p>
       <a href="mailto:harrietzzw@gmail.com" class="link-primary">Work with me →</a>
     </div>
-    <div class="about-hero__photo">
-      <img src="../img/harriet.jpg" alt="Harriet Wang" loading="lazy"/>
+    <div class="about-hero__photo-outer">
+      <img src="../img/kirby.png" alt="" class="about-hero__deco about-hero__deco--kirby"/>
+      <img src="../img/plumbob.png" alt="" class="about-hero__deco about-hero__deco--plumbob"/>
+      <div class="about-hero__photo">
+        <img src="../img/more-harriet.jpg" alt="Harriet Wang" loading="lazy"/>
+      </div>
     </div>
   </div>
 </section>
@@ -84,33 +88,6 @@
 
 <hr class="rule"/>
 
-<section>
-  <div class="container about-photo">
-    <img src="../img/dandelion.png" alt="" class="deco about-photo__deco" aria-hidden="true"/>
-    <div class="about-photo__frame">
-      <img src="../img/ferris-wheel.png" alt="Navy Pier ferris wheel"/>
-    </div>
-  </div>
-</section>
-
-<hr class="rule"/>
-
-<section style="padding: clamp(3rem,7vw,5.5rem) 0;">
-  <div class="container">
-    <h2 class="section-label fade-in">What I do</h2>
-    <div class="skills-grid fade-in">
-      <div class="skill-item"><div class="skill-item__icon">✏️</div><h3 class="skill-item__title">Design</h3><p class="skill-item__list">Product design · UX · Interaction · Design systems · Prototyping · Motion</p></div>
-      <div class="skill-item"><div class="skill-item__icon">🔬</div><h3 class="skill-item__title">Research</h3><p class="skill-item__list">User interviews · Usability testing · A/B testing · Synthesis · Recruitment</p></div>
-      <div class="skill-item"><div class="skill-item__icon">🛠️</div><h3 class="skill-item__title">Craft & Tools</h3><p class="skill-item__list">Figma · ProtoPie · After Effects · Video editing · HTML/CSS · Figma MCP · Claude</p></div>
-      <div class="skill-item"><div class="skill-item__icon">🤝</div><h3 class="skill-item__title">Collaboration</h3><p class="skill-item__list">Cross-functional alignment · Stakeholder management · Fast turnaround · Calm under pressure</p></div>
-      <div class="skill-item"><div class="skill-item__icon">🤖</div><h3 class="skill-item__title">AI-Empowered</h3><p class="skill-item__list">3X AI initiatives · Figma MCP · Claude agents · AI-assisted content review</p></div>
-      <div class="skill-item"><div class="skill-item__icon">🧠</div><h3 class="skill-item__title">Domain</h3><p class="skill-item__list">Fintech · Platform UX · Developer-facing products · B2C · Bank connection infra</p></div>
-    </div>
-  </div>
-</section>
-
-<hr class="rule"/>
-
 <section style="padding: clamp(3rem,7vw,5.5rem) 0; position:relative;">
   <img src="../img/lemon.png" alt="" class="deco exp-photo-deco" aria-hidden="true"/>
   <div class="container">
@@ -123,48 +100,38 @@
 
 <hr class="rule"/>
 
-<section style="padding: clamp(3rem,7vw,5.5rem) 0;">
-  <div class="container">
-    <h2 class="section-label fade-in">Outside work</h2>
-    <div class="outside-grid fade-in">
-      <div class="outside-card">
-        <div class="outside-card__emoji">🚀</div>
-        <h3 class="outside-card__title">Science Fiction</h3>
-        <p class="outside-card__body">I analyze and write about the cultural and technological foundations of classic and modern sci-fi — the anxiety that makes a story resonate, the tech predictions that aged well (and didn't).</p>
-        <p class="outside-card__quote">"Compassion: that's the one thing no machine ever had. Maybe it's the one thing that keeps men ahead of them." — Star Trek</p>
-      </div>
-      <div class="outside-card">
-        <div class="outside-card__emoji">🎨</div>
-        <h3 class="outside-card__title">Art & Visual Culture</h3>
-        <p class="outside-card__body">Brutalism, retro print, generative art, the intersection of art history and computation. My design sensibility comes from somewhere — this is a lot of it.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="rule"/>
-
 <!-- ============================================================
      Life outside work — Instagram-style photo grid. Hover each cell
      to see the caption via the custom cursor tooltip (same
-     mechanism the project cards use — just a data-cursor attribute).
-     Swap the grey .ig-cell__ph placeholder divs for real
-     <img src="..."/> tags once photos are ready; the data-cursor
-     caption and hover behavior need no changes. To add a photo,
-     copy one .ig-cell block and edit the caption + placeholder text.
+     mechanism the project cards use — data-cursor attribute).
+     Captions were written from filenames only where I (Claude)
+     couldn't visually confirm content (converted-from-HEIC photos) —
+     flagged to Harriet in chat to double check/correct.
      ============================================================ -->
 <section style="padding: clamp(3rem,7vw,5.5rem) 0;">
   <div class="container">
     <h2 class="section-label fade-in">Life outside work</h2>
     <div class="ig-grid fade-in">
-      <div class="ig-cell" data-cursor="Harriet giving a talk at SDXD conference" role="img" aria-label="Harriet giving a talk at SDXD conference">
-        <div class="ig-cell__ph"><span>SDXD talk</span></div>
+      <div class="ig-cell" data-cursor="Wandering a Japanese garden" role="img" aria-label="Wandering a Japanese garden">
+        <img src="../img/lifestyle/park.jpg" alt="Wandering a Japanese garden" loading="lazy"/>
       </div>
-      <div class="ig-cell" data-cursor="Harriet's cats" role="img" aria-label="Harriet's cats">
-        <div class="ig-cell__ph"><span>the cats</span></div>
+      <div class="ig-cell" data-cursor="My cat" role="img" aria-label="My cat">
+        <img src="../img/lifestyle/my-cat.jpg" alt="My cat" loading="lazy"/>
       </div>
-      <div class="ig-cell" data-cursor="Harriet enjoys hiking in her free time" role="img" aria-label="Harriet enjoys hiking in her free time">
-        <div class="ig-cell__ph"><span>hiking</span></div>
+      <div class="ig-cell" data-cursor="San Diego Comic-Con" role="img" aria-label="San Diego Comic-Con">
+        <img src="../img/lifestyle/sdcc.jpg" alt="San Diego Comic-Con" loading="lazy"/>
+      </div>
+      <div class="ig-cell" data-cursor="Catching a musical" role="img" aria-label="Catching a musical">
+        <img src="../img/lifestyle/musicals.jpg" alt="Catching a musical" loading="lazy"/>
+      </div>
+      <div class="ig-cell" data-cursor="Weekend baking project" role="img" aria-label="Weekend baking project">
+        <img src="../img/lifestyle/baking.jpg" alt="Weekend baking project" loading="lazy"/>
+      </div>
+      <div class="ig-cell" data-cursor="Good times" role="img" aria-label="Good times">
+        <img src="../img/lifestyle/fun.jpg" alt="Good times" loading="lazy"/>
+      </div>
+      <div class="ig-cell" data-cursor="A moment I liked" role="img" aria-label="A moment I liked">
+        <img src="../img/lifestyle/img-4380.jpg" alt="A moment I liked" loading="lazy"/>
       </div>
     </div>
   </div>
@@ -178,7 +145,7 @@
     <h2 class="footer__headline">Stay in touch</h2>
     <div class="footer__links">
       <a href="mailto:harrietzzw@gmail.com" class="footer__link">Email</a>
-      <a href="#" class="footer__link">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/harrietwang/" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
       <a href="../files/Harriet-Wang-Resume.pdf" class="footer__link">Resume</a>
     </div>
     <div class="footer__bottom">

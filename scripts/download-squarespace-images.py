@@ -85,6 +85,17 @@ MANIFEST = [
      "img/projects/route-year-in-review/route-app.png"),
     ("https://images.squarespace-cdn.com/content/v1/5baa9aa9f8135a6e5700633c/4a553626-12aa-4ed3-a2b4-4007d3e2ed5c/MostLikedSummaryScreen.png",
      "img/projects/route-year-in-review/most-liked-summary-screen.png"),
+
+    # --- Product Design at Route (harrietwang.com/designatroute) ---
+    # NOTE: the original hero cover image was replaced with Harriet's own
+    # uploaded cover.jpg (see img/projects/design-at-route/cover.jpg) —
+    # no longer fetched from Squarespace.
+    # NOTE: onboarding.png, checkout.png, add-card.png, and year-in-review.png
+    # were replaced with Harriet's own uploaded feature screenshots — no
+    # longer fetched from Squarespace. Design at Route no longer depends on
+    # this script for ANY of its images (cover, package-protection, and
+    # boxes-tracking were also direct uploads — see earlier in this file's
+    # history / HANDOFF.md).
 ]
 
 

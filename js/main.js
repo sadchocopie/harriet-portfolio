@@ -95,14 +95,15 @@ function renderProjectGrid() {
   const mount = document.getElementById('projectGrid');
   if (!mount || typeof PROJECTS === 'undefined') return;
   const imgBase = pageImgBase();
-  mount.innerHTML = PROJECTS.map(p => fullCardHTML(p, 'pages/', imgBase)).join('\n');
+  const visible = PROJECTS.filter(p => !p.archived);
+  mount.innerHTML = visible.map(p => fullCardHTML(p, 'pages/', imgBase)).join('\n');
 }
 
 function renderMoreWork() {
   const mount = document.getElementById('projectTrack');
   if (!mount || typeof PROJECTS === 'undefined') return;
   const currentId = document.body.dataset.projectId;
-  const others = PROJECTS.filter(p => p.id !== currentId);
+  const others = PROJECTS.filter(p => p.id !== currentId && !p.archived);
   const imgBase = pageImgBase();
   mount.innerHTML = others.map(p => miniCardHTML(p, '', imgBase)).join('\n');
 }
