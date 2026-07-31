@@ -43,7 +43,7 @@ const PROJECTS = [
   {
     id: 'app-integration',
     href: 'app-integration.html',
-    star: true,
+    /* star: true, */
     cursor: '5 min read →',
     thumb: {
       type: 'image',
@@ -51,8 +51,8 @@ const PROJECTS = [
       alt: 'App Integration — Mailchimp showcase',
     },
     tags: [
-      { text: '★ Featured', variant: 'featured' },
-      { text: 'Shipped · 2025', variant: 'accent' },
+    /*  { text: '★ Featured', variant: 'featured' }, */
+    /*  { text: 'Shipped · 2025', variant: 'accent' }, */
       { text: 'Intuit · QuickBooks · Mailchimp' },
     ],
     title: 'App Marketplace Integration',
@@ -64,10 +64,31 @@ const PROJECTS = [
     cta: { label: 'Case Study ↗', variant: 'primary' },
   },
 
+    {
+    id: 'doc-auto-import',
+    href: 'doc-auto-import.html',
+    cursor: '4 min read →',
+    thumb: {
+      type: 'image',
+      src: 'img/projects/doc-auto-import/hero-multi-channel.png',
+      alt: 'Document Auto Import — multi channel',
+    },
+    tags: [
+    /*  { text: 'Shipped · 2025', variant: 'green' },*/
+      { text: 'Intuit · TurboTax · QBO' },
+    ],
+    title: 'Document Auto Import',
+    desc: 'Reduced double-login friction at a critical auth experience — shifting user mental models to increase automated document import opt-in.',
+    stats: [
+      { num: '~100%', label: 'user preference in testing' },
+    ],
+    cta: { label: 'Learn More ↗', variant: 'primary' },
+  },
+
   {
     id: 'route-year-in-review',
     href: 'route-year-in-review.html',
-    star: true,
+    /* star: true, */
     cursor: 'A personal fave ✦',
     thumb: {
       type: 'image',
@@ -75,8 +96,9 @@ const PROJECTS = [
       alt: 'Route Year in Review',
     },
     tags: [
-      { text: '★ Featured', variant: 'featured' },
+    /*  { text: '★ Featured', variant: 'featured' },*/
       { text: 'Route · 2021–22' },
+      { text: 'Motion · Animation' },
     ],
     title: 'Route: Year in Review',
     desc: 'A Spotify Wrapped–inspired experience that turned passive tracking data into viral social content. Led end to end — concept, animation, engineering collaboration, A/B testing, and a second edition the following year.',
@@ -110,27 +132,6 @@ const PROJECTS = [
   },
 
   {
-    id: 'doc-auto-import',
-    href: 'doc-auto-import.html',
-    cursor: '4 min read →',
-    thumb: {
-      type: 'image',
-      src: 'img/projects/doc-auto-import/hero-multi-channel.png',
-      alt: 'Document Auto Import — multi channel',
-    },
-    tags: [
-      { text: 'Shipped · 2025', variant: 'green' },
-      { text: 'Intuit · TurboTax · QBO' },
-    ],
-    title: 'Document Auto Import',
-    desc: 'Reduced double-login friction at a critical auth experience — shifting user mental models to increase automated document import opt-in.',
-    stats: [
-      { num: '~100%', label: 'user preference in testing' },
-    ],
-    cta: { label: 'Learn More ↗', variant: 'primary' },
-  },
-
-  {
     id: 'connection-reuse',
     href: 'connection-reuse.html',
     archived: true,
@@ -138,7 +139,7 @@ const PROJECTS = [
     thumb: { type: 'placeholder', text: 'IDX · Connection Reuse', color: 'var(--accent)' },
     tags: [
       { text: 'Shipped · Feb 2025', variant: 'green' },
-      { text: 'IDX · Credit Karma · TurboTax' },
+      { text: 'Platform· Credit Karma · TurboTax' },
     ],
     title: 'IDX Connection Reuse',
     desc: 'One connection. Two products. Zero re-authentication. Carousel + bulk multi-select patterns, now standard IDX reuse UI.',
