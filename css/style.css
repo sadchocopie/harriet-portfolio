@@ -426,17 +426,8 @@ hr.rule { border: none; border-top: 1px solid var(--faint); }
   border-color: var(--mid);
 }
 
-/* ── CARD CLICK EXIT ANIMATION ── */
-@keyframes card-leave {
-  0%   { opacity: 1; transform: translateY(-2px) scale(1); box-shadow: 0 0 0 2px var(--accent); }
-  35%  { opacity: 1; transform: translateY(-2px) scale(1); box-shadow: 0 0 0 2px var(--accent); }
-  100% { opacity: 0; transform: translateY(-10px) scale(1.01); box-shadow: none; }
-}
-.project-card.is-leaving {
-  animation: card-leave 0.32s ease forwards !important;
-  pointer-events: none; z-index: 5;
-  border-color: var(--accent);
-}
+/* ── DELETED CARD CLICK EXIT ANIMATION ── */
+
 
 /* ── PAGE ENTER ANIMATION ── */
 /* Body fades in — NO transform here; transform on body breaks position:fixed (cursor, nav) */

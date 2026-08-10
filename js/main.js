@@ -212,17 +212,6 @@ function initTOC() {
   sections.forEach(s => obs.observe(s));
 }
 
-function initCardTransitions() {
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (!href || href === '#') return;
-      e.preventDefault();
-      this.classList.add('is-leaving');
-      setTimeout(() => { window.location.href = href; }, 320);
-    });
-  });
-}
 
 function initCursor() {
   if (window.matchMedia('(hover: none)').matches) return;
@@ -561,7 +550,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initScrollNav();
   initCursor();
-  initCardTransitions();
   initClipy();
   initFadeIn();
   initHeroGlow();
@@ -570,12 +558,3 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjectCarousel();
 });
 
-// Fix: clicking a project card adds .is-leaving to play a fade-out transition
-// before navigating away. 
-window.addEventListener('pageshow', (event) => {
-  if (event.persisted) {
-    document.querySelectorAll('.project-card.is-leaving').forEach(card => {
-      card.classList.remove('is-leaving');
-    });
-  }
-});
