@@ -624,7 +624,7 @@ body { animation: page-fade-in 0.25s ease both; }
 .project-section__body:last-child { margin-bottom: 0; }
 
 /* Project images */
-.project-img { width: 100%; border-radius: 0; overflow: hidden; border: none; margin: 1.5rem 0; background: var(--surface); }
+.project-img { width: 100%; border-radius: 0; overflow: hidden; border: none; margin: 1.5rem 0; }
 .project-img img { width: 100%; display: block; }
 .project-img-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
 .project-img-grid .project-img { margin: 0; }
