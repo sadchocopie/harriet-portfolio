@@ -55,7 +55,7 @@
     <a href="../index.html" class="back-link">← All work</a>
     <div class="tag-row"><span class="tag tag--green">Shipped · 2025</span><span class="tag">Intuit · TurboTax · QBO</span></div>
     <h1 class="project-title">Document<br>Auto Import</h1>
-    <p class="project-sub">Reducing "double-login" friction at a critical auth experience — shifting user mental models from "why am I logging in again?" to "I'm granting access to my documents."</p>
+    <p class="project-sub">I worked around a techinical challenge currently giving customers a "double-login" friction at a critical auth experience — shifting user mental models from "why am I logging in again?" to "I'm granting access to my documents."</p>
     <div class="stats-row fade-in">
       <div class="stat-block"><span class="stat-block__num">75%</span><span class="stat-block__label">dropped off at the sign-in prompt — the problem</span></div>
       <div class="stat-block"><span class="stat-block__num">~100%</span><span class="stat-block__label">user preference for new design in testing</span></div>
@@ -68,6 +68,9 @@
       <div><span class="project-meta__label">Tools</span><span class="project-meta__value">Figma · Amplitude · UserTesting · HeyMarvin</span></div>
     </div>
   </div>
+            <div class="project-img">
+            <img src="../img/projects/doc-auto-import/hero-multi-channel.png" alt="Multi channel experience" loading="lazy"/>
+          </div>
 </section>
 
 <div class="project-body">
@@ -83,21 +86,20 @@
         <section id="challenge" class="project-section">
           <p class="project-section__label">01 · Challenge</p>
           <h2 class="project-section__heading">The "double-login" that was costing completions</h2>
-          <p class="project-section__body">Banks use separate secure channels to transmit different data types. A user can authenticate once to sync transactions, but a second explicit authorization is required for PDF documents — like monthly statements and tax forms. Most customers didn't know auto-import was even possible, and when asked to log in twice in a row, they abandoned and reverted to manual upload.</p>
-          <div class="project-img">
-            <img src="../img/projects/doc-auto-import/hero-multi-channel.png" alt="Multi channel experience" loading="lazy"/>
-          </div>
+          <p class="project-section__body">Banks use separate secure channels to transmit different data types. This means, for an Intuit customer, they can authenticate once to sync transactions, but a second explicit authorization is required for PDF documents — like monthly statements and tax forms. Most customers didn't know auto-import was even possible, and when asked to log in twice in a row, they abandoned and reverted to manual upload.</p>
           <div class="project-img">
             <img src="../img/projects/doc-auto-import/qb-problem.png" alt="QuickBooks problem state" loading="lazy"/>
           </div>
-          <p class="img-caption">The problem: 75% of customers dropped off immediately after seeing the second sign-in prompt</p>
+          <p class="img-caption">The problem Quickbooks team brought to us: <br>Customers are promised “automatically imported statements” with a simple “Enroll” button, yet 75% of the customers drop off the funnel immediately — after being prompted to “sign in” instead.</p>
+
+          <p class="project-section__body">Althought we were technically giving cusotmers the ability to set up everyhing in one go, the current technical and legal constraints was nicknamed the “brute force” approach, giving our customers a high-friciton "Double-login" experience. From a UX standpoint, this solution was rolled out for customers without clear value proposition and clarity to address the second authentication. Today, customers are only able to manually document management, and I, have to design around it.</p >
         </section>
 
         <section id="tasks" class="project-section">
-          <p class="project-section__label">02 · My Tasks</p>
-          <h2 class="project-section__heading">End-to-end design strategy + proactive cross-BU bridge building</h2>
-          <p class="project-section__body">I led end-to-end design strategy: identifying experience gaps across QBO and TurboTax, defining problem statements in the PRD, and delivering design audits, high-fidelity prototypes, and research-backed decks for PM to get senior leadership sign-off on dev resources.</p>
-          <p class="project-section__body">The original scope was narrow — one product, one team. I proactively connected with TurboTax designers and PMs to understand their expert-led workflow, co-facilitated roundtables with TurboTax experts, and helped architect a solution built for cross-BU scalability from day one.</p>
+          <p class="project-section__label">02 · My design & strategic contribution</p>
+          <h2 class="project-section__heading">An End-to-end one-platform design strategy, with proactive partnership across business units</h2>
+          <p class="project-section__body">I looked beyond the orignal proudct scope of QuickBooks to avoid fragmented experiences across platform in the future. I proactively connected with TurboTax designers and PMs to understand their expert-led workflow, co-facilitated roundtables with TurboTax experts, and helped architect a solution built for cross-BU scalability before I started pixle pushing in Figma.</p>
+          <p class="project-section__body">I delivered design audits, high-fidelity usability testing prototypes and research-backed design decks for my PM partner to get senior leadership buy-in, successfully getting sign-off for development resources..</p>
           <div class="project-img">
             <img src="../img/projects/doc-auto-import/tt-problem.png" alt="TurboTax problem discovery" loading="lazy"/>
           </div>
@@ -111,24 +113,37 @@
           <p class="project-section__body">I ran three rounds of usability testing with my Content Design partner, iterating from an imagery-heavy approach (high resonance, low scalability) through to a stripped-down conversational design that proved most successful in A/B tests — and was a much lighter engineering lift to scale across Banking, Tax, and Loans.</p>
           <div class="project-img-grid">
             <div class="project-img"><img src="../img/projects/doc-auto-import/education-a.png" alt="Design iteration A" loading="lazy"/></div>
+            <p class="image-caption">Pros: Acknowledges the result of the initial sign-in, clarifying customers brought in data, not documents. <br> Cons: Low readability on the actual prompt for next step; The status of the checkbox changes the next screen, adding engineering complexity in how the widgets are currently wired together. </p>
             <div class="project-img"><img src="../img/projects/doc-auto-import/education-b.png" alt="Design iteration B" loading="lazy"/></div>
+            <p class="image-caption">Pro: A descriptive headline and added graphic made explicit what documents will be brought in. <br> Cons: The headline and imagery alltogether made users feel their original task were interrupted; While the graphic asset can be templatized too, no team wanted to own the customizization for a variety of scenarios and products. </p>
           </div>
-          <p class="img-caption">Early iterations — strong resonance, but too complex to scale</p>
           <div class="project-img">
             <img src="../img/projects/doc-auto-import/education-c.png" alt="Final design direction" loading="lazy"/>
           </div>
-          <p class="img-caption">Final direction — conversational, scalable, tested highest in A/B</p>
+          <p class="img-caption">Final direction: conversational & scalable. <br> It was time to admit a shifting of the gears ourselves. My content designer and I tested one more iteration that we personally preferrred less. At the time, the tone felt a bit too conversational for our more rigid rationalization, yet, it tested in a A/B testings against the other versions, and proved to be most successful for conversion.  This was also fatalistic news, as serving different sets of text content across Banking, Tax, Loans scenarios is a much lighter engineering lift.</p>
         </section>
 
         <section id="impact" class="project-section">
           <p class="project-section__label">04 · Impact</p>
-          <h2 class="project-section__heading">Mental model shifted. Projected significant lift in auto-import adoption.</h2>
-          <p class="project-section__body">The final design successfully shifted user perception from "Why am I logging in again?" to "I'm granting access to my secure documents." User testing showed nearly 100% preference for the new design.</p>
-          <p class="project-section__body">The solution was architected for scalability from day one — serving different content across Banking, Tax, and Loans with a content-driven approach rather than custom graphics per scenario. Projected to drive significant lift in automated document imports across QuickBooks and TurboTax.</p>
+          <h2 class="project-section__heading">A heavily user-tested solution, key business talks go ahead with confidnce.</h2>
+          <p class="project-section__body">The iterative design process proved key to decrease the friction in the “double-login“ experience, without challenging the existing tech constraints. User testing showed users show almost 100% preferences toward new design. The final design also more favorably shifted user perception from "Why am I logging in again?" to "I'm granting access to my secure documents." We project a significant lift in auto-import adoption, driving higher conversion rates and reducing the manual document burden for millions of users.</p>
+          <p class="project-section__body">Our internal case study projected to drive signi ficant lift in automated document imports across QuickBooks and TurboTax. Today, business talks to onboard banks with heavy data regulation and low connection rate go ahead across Banking, Tax, and Loans.</p>
           <div class="project-img">
             <img src="../img/projects/doc-auto-import/multi-channel-alt.png" alt="Final multi-channel solution" loading="lazy"/>
           </div>
         </section>
+
+        <section id="impact" class="project-section">
+          <p class="project-section__label">05 · What did I learn</p>
+          <h2 class="project-section__heading">Who are my business "customers" as a platform capability designer, and how does design serve them?</h2>
+          <p class="project-section__body">As a designer on a Platform team, I realized quickly that my "customers" are not just the small business owners using QuickBooks or the taxpayers using TurboTax. The Product teams themselves are not merely "stakeholders". They are also my "customers". If the platform solution doesn't solve their specific architectural or design language needs, it won't be adopted. I learned to treat internal stakeholders with the same level of empathy, and carried that forward with me throughout the project.</p>
+          <p class="project-section__body">Even with the blessing of my Product owner, I naturally felt nervous. However, I learned that proactive outreach is the best cure for uncertainty, and showing up with my aforementinoed empathy, paired with a figma board full of screenshots of existing broken connection issues like a writer pitching a story to a publisher, put my solution and my team in a good spotlight. In those conversations, my team was not just "gathering requirements", we were seen as the problem solvers and more importantly, the connective tissue between a platform org and product orgs. Together, we built true stress-tested experiences.</p>
+          <div class="project-img">
+            <img src="../img/projects/doc-auto-import/multi-channel-alt.png" alt="Final multi-channel solution" loading="lazy"/>
+          </div>
+        </section>
+
+
       </div>
     </div>
   </div>
