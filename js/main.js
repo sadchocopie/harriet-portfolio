@@ -569,3 +569,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initTOC();
   initProjectCarousel();
 });
+
+// Fix: clicking a project card adds .is-leaving to play a fade-out transition
+// before navigating away. 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    document.querySelectorAll('.project-card.is-leaving').forEach(card => {
+      card.classList.remove('is-leaving');
+    });
+  }
+});
